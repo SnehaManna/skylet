@@ -1,0 +1,46 @@
+.multiselectArea{
+    .dropdown{
+        width: 100%;
+        max-width: 400px;
+        margin:20px auto;
+        position: relative;
+        .dropdowninn{
+            border: 2px solid #000;
+            padding: 10px;
+            position: relative;
+            font-size: 18px;
+            border-radius:8px;
+            .countrybtn{
+margin-right: 5px;
+            }
+            .imgbtn{
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                position: absolute;
+                right:0;
+                
+                img{
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+        .select-opt{
+            position: absolute;
+            background-color: #eae6e685;
+            width: 100%;
+            border-radius: 8px;
+
+            ul{
+                padding: 0;
+                li{
+                    list-style: none;
+                    padding: 10px 10px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

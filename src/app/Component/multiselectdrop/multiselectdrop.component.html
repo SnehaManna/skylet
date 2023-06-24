@@ -1,0 +1,25 @@
+<div class="multiselectArea">
+  <div class="dropdown">
+    <div class="dropdowninn" (click)="openDrop()">
+      <button class="countrybtn" *ngFor="let item of checkArrtwo">{{ item }}</button> select
+      country
+      <button class="imgbtn">
+        <img src="./assets/images/downarrow.svg" alt="img" />
+      </button>
+    </div>
+    <div class="select-opt" *ngIf="open">
+      <ul>
+        <li *ngFor="let opt of option">
+          <input
+            type="checkbox"
+            [checked]="checkArr.includes(opt.val)"
+            name="{{ opt.name }}"
+            value="{{ opt.val }}"
+            [disabled]="readonly"
+            (input)="onEmptyarr($event)"
+          />{{ opt.name }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
